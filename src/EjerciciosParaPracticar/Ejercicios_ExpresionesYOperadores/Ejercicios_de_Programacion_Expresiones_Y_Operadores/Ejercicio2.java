@@ -16,7 +16,7 @@ public class Ejercicio2 {
         int incr = n+77; //declaro las variables y le asigno una operación aritmética
         int dec = n-3; //declaro las variables y le asigno una operación aritmética
         int dupl= n*2; //declaro las variables y le asigno una operación aritmética
-        System.out.println("El numero introducido es: " + n + "\nEl incremento de 77 es: " + incr + "\nEl decremento de 3 es: " + dec +);
+        System.out.println("El numero introducido es: " + n + "\nEl incremento de 77 es: " + incr + "\nEl decremento de 3 es: " + dec);
     }
 
 
