@@ -16,7 +16,9 @@ public class Ejercicio2 {
         int incr = n+77; //declaro las variables y le asigno una operación aritmética
         int dec = n-3; //declaro las variables y le asigno una operación aritmética
         int dupl= n*2; //declaro las variables y le asigno una operación aritmética
-        System.out.println("El numero introducido es: " + n + "\nEl incremento de 77 es: " + incr + "\nEl decremento de 3 es: " + dec);
+        System.out.println("El numero introducido es: " + n + "\nEl incremento de 77 es: " + incr + "\nEl decremento de 3 es: " + dec + "\nEl valor duplicado es: " + dupl);
+    /*Uso un sistema de salida de impresión por pantalla y hago salto de linea y luego dentro estoy haciendo salto de linea dentro de
+    la cadena texto con \n para no tener que escribir todo el tiempo System.out.println */
     }
 
 
