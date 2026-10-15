@@ -3,7 +3,7 @@
 divida dos números introducidos por teclado. */
 ///////////////////////////////////////////////////////
 
-package EjerciciosParaPracticar.Ejercicios_ExpresionesYOperadores.Ejercicios_de_Programacion_Expresiones_Y_Operadores; //uso este paquete.
+/* package EjerciciosParaPracticar.Ejercicios_ExpresionesYOperadores.Ejercicios_de_Programacion_Expresiones_Y_Operadores; //uso este paquete.
 import java.util.Scanner; //importo la clase Scanner.
     public class Ejercicio6 { //creo una clase pública llamada "Ejercicio6";
 
@@ -45,10 +45,11 @@ import java.util.Scanner; //importo la clase Scanner.
             System.out.println("¡ADIOS!");
             System.exit(0); //Esto detiene el programa por completo.
             else
-            */
+            /
 
 
         switch (num0){
+
 
             case 0:
                 System.exit(0);
@@ -61,6 +62,7 @@ import java.util.Scanner; //importo la clase Scanner.
                 System.out.print("El resultado de la suma es: " + sum);
                 break;
             case 2:
+
                 System.out.print("Escribe los dos números que quieras restar.");
                 float res = num1-num2;
                 System.out.print("El resultado de la resta es: " + res);
@@ -90,7 +92,7 @@ import java.util.Scanner; //importo la clase Scanner.
 
 
     }
-
+*/
 
 
 
