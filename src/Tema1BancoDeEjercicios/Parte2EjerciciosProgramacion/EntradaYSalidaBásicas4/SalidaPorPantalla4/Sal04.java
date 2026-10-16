@@ -9,7 +9,9 @@ package Tema1BancoDeEjercicios.Parte2EjerciciosProgramacion.EntradaYSalidaBásic
 
 public class Sal04 {
     public static void main(String[] args){
-
+        System.out.println("                                                                     ");
+        System.out.println("                         H  O  R  A  R  I  O                         ");
+        System.out.println("                                                                     ");
         System.out.println("        |  LUNES  |  MARTES | MIERCOLES |  JUEVES  |  VIERNES  |     ");
         System.out.println("---------------------------------------------------------------|     ");
         System.out.println("| 08:20 |   SI    |    LM   | ENTORNOS  |  BBDD    |    IPE    |     ");
