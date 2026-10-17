@@ -1,4 +1,4 @@
-////////////////////////////////////////////////////////////////////
+package Tema1BancoDeEjercicios.Parte2EjerciciosProgramacion.EjerciciosParaHacerEnClase; ////////////////////////////////////////////////////////////////////
 /*  emos terminado el tema 1, os propongo "Ejercicios para pensar".
 IntelYGentes
 
@@ -37,7 +37,7 @@ SALIDA DE PRUEBA
 
 import java.util.Scanner;
 
-public class EjercicioClaseRapido {
+public class IntelYGentes {
     public static void main(String[]args){
         System.out.print("Dime cuantas baterias: ");
         Scanner teclado = new Scanner(System.in);
