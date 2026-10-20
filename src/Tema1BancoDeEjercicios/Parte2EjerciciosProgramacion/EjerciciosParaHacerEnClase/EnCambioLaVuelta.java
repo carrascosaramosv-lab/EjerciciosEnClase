@@ -32,7 +32,7 @@ Salida de prueba.
 1 moneda de 1 cent. */
 //////////////////////////////////////////////////////////////////////////////////
 
-/*
+
 package Tema1BancoDeEjercicios.Parte2EjerciciosProgramacion.EjerciciosParaHacerEnClase;
 import java.util.Scanner;
 public class EnCambioLaVuelta {
@@ -43,19 +43,18 @@ public class EnCambioLaVuelta {
         int centimosIniciales = teclado.nextInt();
 
         int eurosTotales = centimosIniciales/100,
-            billetes50 = eurosTotales/50,
-            billetes20 = (eurosTotales%50)/20,
-            billetes10 = (eurosTotales%50)%20,
-            billetes5 = billetes10%5;
+            billetes50 = eurosTotales/5000,
+            billetes20 = (eurosTotales%50)/2000,
+            billetes10 = (eurosTotales%50)%2000,
+            billetes5 = billetes10%500;
 
 
 
 
-        System.out.printf("billetes: \n%02d BILLETES 500\n%02d BILLETES DE 200\n%02d BILLETES DE 100",billetes50,billetes20,billetes10);
+        System.out.printf("billetes: \n%02d BILLETES 50\n%02d BILLETES DE 20\n%02d BILLETES DE 10",billetes50,billetes20,billetes10);
 
 
 
 
     }
 }
-*/
