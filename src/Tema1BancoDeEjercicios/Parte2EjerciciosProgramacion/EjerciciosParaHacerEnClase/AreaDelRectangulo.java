@@ -43,13 +43,13 @@ public class AreaDelRectangulo {
 
         System.out.print("Dame las coordenadas del rectangulo y luego las otras coordenadas: ");
         Scanner teclado = new Scanner(System.in);
-        int valorx1 = teclado.nextInt(),
-            valory1 = teclado.nextInt(),
-            valorx2 = teclado.nextInt(),
-            valory2 = teclado.nextInt(),
-            x = valorx2 - valorx1,
-            y = valory2 - valory1,
-            area = x*y;
+        short valorx1 = teclado.nextShort(),
+              valory1 = teclado.nextShort(),
+              valorx2 = teclado.nextShort(),
+              valory2 = teclado.nextShort(),
+              x = (short)(valorx2 - valorx1),
+              y = (short)(valory2 - valory1);
+        int   area = x*y;
 
 
         System.out.printf("El area del rectángulo es: %02d",area);

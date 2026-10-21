@@ -62,7 +62,7 @@ public class DeseosGamer {
             comisionCobrada = monedasIngresadas-comision,
             monedasPremium = comisionCobrada/100,
             monedasGratis = comisionCobrada%100;
-
+            //COMO BUENA PRACTICA DECLARAR CONSTANTES
 
         System.out.printf("Tus monedas con la cantidad ingresada será: %02d de monedas premium y %02d de monedas gratis",monedasPremium,monedasGratis);
 

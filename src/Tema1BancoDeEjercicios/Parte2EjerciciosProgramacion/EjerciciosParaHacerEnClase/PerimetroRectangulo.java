@@ -28,10 +28,10 @@ public class PerimetroRectangulo {
     public static void main(String[]args){
         System.out.print("Introduce el alto y el ancho del rectangulo: ");
         Scanner teclado = new Scanner(System.in);
-        double altura_rec = teclado.nextInt(),
-                anchura_rec = teclado.nextInt();
-        double perimetro_rec = (altura_rec+anchura_rec)*2;
-        System.out.print("El perimetro del rectángulo es: " +perimetro_rec);
+        byte altura_rec = teclado.nextByte(),
+                anchura_rec = teclado.nextByte();
+        int perimetro_rec = (altura_rec+anchura_rec)*2;
+        System.out.print("El perimetro del rectángulo es: " + perimetro_rec);
 
 
 

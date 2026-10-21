@@ -40,6 +40,7 @@ public class TartaDeManzana {
             moras = manzanas*2;
         double tazasCrema =(double) (manzanas+moras)/2;
         System.out.printf("Los ingredientes serian: \n%02d manzanas.\n%02d moras.\n%.2f tazas de crema.",manzanas,moras,tazasCrema);
+        // con el tipo double pongo ½.2f porque f espara double y .2 es que quiero solo dos decimales.
 
 
 

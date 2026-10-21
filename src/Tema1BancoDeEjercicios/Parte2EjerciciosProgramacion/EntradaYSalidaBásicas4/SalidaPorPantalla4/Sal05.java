@@ -12,7 +12,7 @@ package Tema1BancoDeEjercicios.Parte2EjerciciosProgramacion.EntradaYSalidaBásic
 public class Sal05 {
     public static void main(String[]args){
 
-        System.out.print("uno\n" + "2\n" + "3\n");
+        System.out.print("1\n" + "2\n" + "3\n");
 
 
 
