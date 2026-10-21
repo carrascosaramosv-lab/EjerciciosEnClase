@@ -58,8 +58,67 @@ public class Homenaje {
         final int precioCubata = 5;
         final double precioCerveza = 2.5;
         System.out.print("Cuantos consumiciones tiene cada uno 1ºAsier,2ºMariano,3ºMartín");
-        int asierCubatas %=
-        //25 min = a segundos
+        //30min = 30min*60s/min = 1800s
+        //25 min = 25min*60s/min = 1500s
+        //23 min = 23min*60s/min = 1380s
+        //20 min = 20min*60s/min = 1200s
+        //15 min = 15min*60s/min = 900s
+        //10 min = 10min*60s/min = 600s
+        //8 min = 8min*60s/min = 480s
+        int segundosCigarros = 480;
+        int asierNumCubatas = teclado.nextInt(),
+            marianoNumCubatas = teclado.nextInt(),
+            marianoNumCervezas = teclado.nextInt(),
+            martinNumCervezas = teclado.nextInt();
+        final int asierTiempoConsumicion = 1500,
+                  marianoTiempoConsumicionCubata = 1200,
+                  marianoTiempoConsumicionCerveza = 600,
+                  martinTiempoConsumicionCerveza = 900,
+                  martinTiempoConsumicionCigarro = 480,
+                  horaDeLlegada = 1800;  //COMO LLEGAN A LAS 00:30 EL DÍA LLEVA 1800 segundos desde que comenzó
+        int asierSegundosTotal = (asierNumCubatas*asierTiempoConsumicion)+horaDeLlegada,
+            marianoSegundosTotal = (marianoNumCubatas*marianoTiempoConsumicionCubata)+(marianoNumCervezas*marianoTiempoConsumicionCerveza)+horaDeLlegada,
+            martinSegundosTotal = (martinNumCervezas*martinTiempoConsumicionCerveza)+horaDeLlegada,
+            martinSegundosTotalCigarros =(martinSegundosTotal/segundosCigarros);
+
+
+
+
+        /* ********************* PASO SE SEGUNDOS A HORAS MIN Y SEG ********************* */
+
+        //ASIER
+        final int unaHoraEnSegundos = 3600,
+                  unMinutoEnSegundos = 60;
+        int asierHoras = asierSegundosTotal/unaHoraEnSegundos,
+            asierMin = (asierSegundosTotal%unaHoraEnSegundos)/unMinutoEnSegundos;
+          //  asierSeg = ((asierSegundosTotal%unaHoraEnSegundos)%unMinutoEnSegundos);
+
+
+        //MARIANO
+        int  marianoHoras = marianoSegundosTotal/unaHoraEnSegundos,
+             marianoMin = (marianoSegundosTotal%unaHoraEnSegundos)/unMinutoEnSegundos;
+
+         //    marianoSeg = ((marianoSegundosTotal%unaHoraEnSegundos)%unMinutoEnSegundos);
+
+
+        //MARTÍN
+        int martinHora = martinSegundosTotal/unaHoraEnSegundos,
+            martinMin = (martinSegundosTotal%unaHoraEnSegundos)/unMinutoEnSegundos;
+         //   martinSeg = ((martinSegundosTotal/unaHoraEnSegundos)%unMinutoEnSegundos);
+
+        //CALCULO EL DINERO
+        double dineroCervezas = (marianoNumCervezas+martinNumCervezas)*precioCerveza;
+        int    dineroCubatas = (asierNumCubatas+marianoNumCubatas)*precioCubata;
+        double dineroTotal = dineroCervezas + dineroCubatas;
+
+
+
+        //CALCULO CIGARROS DE MARIANO
+        int cigarros = martinSegundosTotalCigarros+1;
+
+        System.out.printf("%2d:%02d  %2d:%02d  %2d:%02d  %.1f€  %2d",asierHoras,asierMin,marianoHoras,marianoMin,martinHora,martinMin,dineroTotal,cigarros);
+
+
 
 
 
