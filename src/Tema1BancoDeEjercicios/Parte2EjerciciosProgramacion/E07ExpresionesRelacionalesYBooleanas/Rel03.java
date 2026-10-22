@@ -1,0 +1,13 @@
+/////////////////////////////////////////////////////////////////////////////////
+    /*
+    Lee un número entero y muestra true si es múltiplo de 5 y false si no lo es.
+       */
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+package Tema1BancoDeEjercicios.Parte2EjerciciosProgramacion.E07ExpresionesRelacionalesYBooleanas;
+
+public class Rel03 {
+}
