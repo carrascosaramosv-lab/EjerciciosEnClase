@@ -78,8 +78,8 @@ public class Homenaje {
                   horaDeLlegada = 1800;  //COMO LLEGAN A LAS 00:30 EL DÍA LLEVA 1800 segundos desde que comenzó
         int asierSegundosTotal = (asierNumCubatas*asierTiempoConsumicion)+horaDeLlegada,
             marianoSegundosTotal = (marianoNumCubatas*marianoTiempoConsumicionCubata)+(marianoNumCervezas*marianoTiempoConsumicionCerveza)+horaDeLlegada,
-            martinSegundosTotal = (martinNumCervezas*martinTiempoConsumicionCerveza)+horaDeLlegada,
-            martinSegundosTotalCigarros =(martinSegundosTotal/segundosCigarros);
+            martinSegundosTotal = (martinNumCervezas*martinTiempoConsumicionCerveza)+horaDeLlegada;
+           // martinSegundosTotalCigarros =(martinSegundosTotal/segundosCigarros);
 
 
 
@@ -114,7 +114,7 @@ public class Homenaje {
 
 
         //CALCULO CIGARROS DE MARIANO
-        int cigarros = martinSegundosTotalCigarros+1;
+        int cigarros = (martinSegundosTotal-horaDeLlegada)/480;
 
         System.out.printf("%2d:%02d  %2d:%02d  %2d:%02d  %.1f€  %2d",asierHoras,asierMin,marianoHoras,marianoMin,martinHora,martinMin,dineroTotal,cigarros);
 

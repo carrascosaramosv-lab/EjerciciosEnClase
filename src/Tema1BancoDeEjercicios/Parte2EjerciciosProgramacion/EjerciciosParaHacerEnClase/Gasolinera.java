@@ -53,9 +53,13 @@ public class Gasolinera {
     public static void main(String[] args){
         final int camionL = 100,
                 todoterrenoL = 70,
-                turismoL = 50;
+                turismoL = 50,
+                dias = 90;
 
-        System.out.println("Indicame el número de cada tipo vehículos que han repostado en cada mes introduciendo primero camiones, terrenos, turísmos escrbiendo un mes por línea:   ");// \n MES 1 \nCamiones: ")  \nTodoterrenos: \nTurismos: \n\n MES 2 \nCamiones: \nTodoterrenos: \nTurismos: \n MES 3 \nCamiones: \nTodoterrenos: \nTurismos: ");
+        System.out.println("Indicame el número de cada tipo vehículos que han repostado en cada mes introduciendo " +
+                "primero camiones, terrenos, turísmos escrbiendo un mes por línea:   ");// \n MES 1 \nCamiones: ")
+        // \nTodoterrenos: \nTurismos: \n\n MES 2 \nCamiones: \nTodoterrenos: \nTurismos: \n MES 3 \nCamiones:
+        // \nTodoterrenos: \nTurismos: ");
         Scanner teclado = new Scanner(System.in);
         int camiones1 = teclado.nextInt(),
             todoterrenos1 = teclado.nextInt(),
@@ -75,11 +79,17 @@ public class Gasolinera {
             camiones3L = camiones3*camionL,
             todoterrenos3L = todoterrenos3*todoterrenoL,
             turismos3L = turismos3*turismoL;
-           double mes1 = (double)(camiones1L + todoterrenos1L + turismos1L + camiones2L + todoterrenos2L + turismos2L + camiones3L + todoterrenos3L + todoterrenos3L)/90;
+        double camionesTotalL =(double) (camiones1L+camiones2L+camiones3L)/dias,
+               todoterrenosTotalL = (double)(todoterrenos1L+todoterrenos2L+todoterrenos3L)/dias,
+               turismosTotalL = (double)(turismos1L+turismos2L+turismos3L)/dias,
+               totalL = camionesTotalL+todoterrenosTotalL+turismosTotalL;
+        int total = (int)Math.ceil(totalL);
+        //double mes1 = (double)(camiones1L + todoterrenos1L + turismos1L + camiones2L + todoterrenos2L
+                 //  + turismos2L + camiones3L + todoterrenos3L + todoterrenos3L)/90;
 
 
 
-        System.out.printf("la gasolina es : %.2f ",mes1);
+        System.out.printf("la gasolina es : %02d ",total);
 
 
 

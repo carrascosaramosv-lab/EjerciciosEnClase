@@ -35,9 +35,15 @@ import java.util.Scanner;
 public class CuantosCaballosTieneMiCoche {
     public static void main(String[] args){
 
+          Scanner teclado = new Scanner(System.in);
+          System.out.print("¿Cuantos KW tiene tu coche?: ");
+          float kwEntrada = teclado.nextFloat();
 
+          final float cv = 0.7355f;
 
+          float cvTotal =(float) kwEntrada/cv;
 
+          System.out.printf("Tu vehículo tiene %.4f caballos reales.",cvTotal);
 
 
 
