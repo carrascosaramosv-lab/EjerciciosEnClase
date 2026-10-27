@@ -17,9 +17,9 @@ public class Ifs01 {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         if(num<0){
-            System.out.printf("El número %02d es negativo",num);
+            System.out.printf("B= %02d --->  negativo",num);
         } else {
-            System.out.printf("El número %02d es positivo",num);
+            System.out.printf("B= %02d ---> positivo",num);
         }
 
 
