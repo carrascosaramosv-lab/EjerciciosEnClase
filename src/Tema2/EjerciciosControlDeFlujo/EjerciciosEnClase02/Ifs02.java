@@ -6,7 +6,7 @@ Programa que lea un número entero por teclado y calcule si es par o impar.
 
 package Tema2.EjerciciosControlDeFlujo.EjerciciosEnClase02;
 import java.util.Scanner;
-public class ifs02 {
+public class Ifs02 {
     public static void main(String[] args){
 
         System.out.print("Escribe un número para ver si es par impar");
