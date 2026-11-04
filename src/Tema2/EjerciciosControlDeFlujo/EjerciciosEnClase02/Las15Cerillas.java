@@ -56,16 +56,24 @@ public class Las15Cerillas {
         int numeroTotalCerillas = sc.nextInt();
         System.out.print("Indica el número de cerillas máximo que se puede retirar de una vez: ");
         int numeroMaximoCerillas = sc.nextInt();
-        int coger = 0;
-        if (numeroTotalCerillas-numeroMaximoCerillas<3){
-            coger=numeroMaximoCerillas-numeroTotalCerillas;
-            System.out.printf("%d",coger);
-        } else if (numeroTotalCerillas-numeroMaximoCerillas<=2) {
+       /*
+        int numero = numeroTotalCerillas-numeroMaximoCerillas;
+        if (numero>=1){
+            System.out.printf("%d",numero);
+        } else if (numero<=2) {
             System.out.println("pierde el que empiece: ");
-        }else if (numeroMaximoCerillas-numeroMaximoCerillas==3){
+        }else if (numero==3){
             System.out.println("1");
         }
 
-
+        */
+        if (numeroTotalCerillas-numeroMaximoCerillas<=2 && numeroTotalCerillas-numeroMaximoCerillas>0){
+            System.out.printf("%d",numeroMaximoCerillas);
+        }else if (numeroTotalCerillas-numeroMaximoCerillas>2){
+            System.out.printf("%d",numeroMaximoCerillas);
+        }else if(numeroTotalCerillas-numeroMaximoCerillas==0){
+            int res = numeroMaximoCerillas-1;
+            System.out.printf("%d",res);
+        }
     }
 }
