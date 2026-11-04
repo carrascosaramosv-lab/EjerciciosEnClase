@@ -67,13 +67,17 @@ public class Las15Cerillas {
         }
 
         */
-        if (numeroTotalCerillas-numeroMaximoCerillas<=2 && numeroTotalCerillas-numeroMaximoCerillas>0){
-            System.out.printf("%d",numeroMaximoCerillas);
-        }else if (numeroTotalCerillas-numeroMaximoCerillas>2){
-            System.out.printf("%d",numeroMaximoCerillas);
-        }else if(numeroTotalCerillas-numeroMaximoCerillas==0){
-            int res = numeroMaximoCerillas-1;
-            System.out.printf("%d",res);
+        int residuo = (numeroTotalCerillas - 1) % (numeroMaximoCerillas + 1);
+
+
+        if (residuo == 0) {
+            System.out.println("PIERDO");
+        } else {
+            System.out.println(residuo);
         }
+        sc.close();
     }
+
+
 }
+

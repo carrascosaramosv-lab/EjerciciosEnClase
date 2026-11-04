@@ -2,7 +2,11 @@
 /*
 Liga Fantasy
 
-Mi grupo de amigos y yo que subimos todos a jugar al campo de fútbol tenemos la idea de recrear de forma rudimentaria el popular juego de la liga fantasy, pero usando como jugadores a todos los que subimos a jugar para crear nuestra propia liga. Para ello, haremos un programa que introduzca el nombre del jugador y las puntuaciones que ha tenido a lo largo de los partidos de un día para saber cuánto puntúa cada partido de la siguiente manera:
+Mi grupo de amigos y yo que subimos todos a jugar al campo de fútbol tenemos la idea de recrear de
+forma rudimentaria el popular juego de la liga fantasy, pero usando como jugadores a todos los que
+subimos a jugar para crear nuestra propia liga. Para ello, haremos un programa que introduzca el nombre
+del jugador y las puntuaciones que ha tenido a lo largo de los partidos de un día para saber cuánto puntúa
+ cada partido de la siguiente manera:
 
 goles: +2
 
