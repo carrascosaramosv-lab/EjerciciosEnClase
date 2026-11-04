@@ -35,13 +35,11 @@ public class AmorAviar {
         System.out.print("Introduce el número de palomas dentro del palomar: ");
         int palomas = sc.nextInt();
 
-        if(jaula<=palomas){
+        if(jaula<palomas){
             System.out.println("ROMANCE");
         }else {
             System.out.println("PRINCIPIO");
         }
-
-
 
 
     }

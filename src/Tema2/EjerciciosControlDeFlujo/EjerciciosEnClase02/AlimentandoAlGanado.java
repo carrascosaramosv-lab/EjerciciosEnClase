@@ -46,19 +46,19 @@ public class AlimentandoAlGanado {
 
         System.out.print("¿Introduce cuantas vacas marrones tienes?(tiene que ser un número par): ");
         Scanner sc = new Scanner(System.in);
-        int vacasMarrones = sc.nextInt();
+        short vacasMarrones = sc.nextShort();
         System.out.println("¿Introduce el numero de kilos que come la vaca negra?: ");
-        int kilosNegras = sc.nextInt();
+        short kilosNegras = sc.nextShort();
+        if (vacasMarrones%2!=0) {
+            System.out.println("ANIMAL!");
+        }else {
+            int vacasNegras = vacasMarrones/2;
+            int vacasTotales = vacasMarrones + vacasNegras,
+                    kilosMarron = kilosNegras * 2,
+                    kilosTotales = (kilosMarron * vacasMarrones) + (kilosNegras * (int) vacasNegras);
 
-        double vacasNegras = vacasMarrones*0.5;
-        int vacasTotales = vacasMarrones+(int)vacasNegras,
-                kilosMarron = kilosNegras*2,
-                kilosTotales = (kilosMarron*vacasMarrones)+(kilosNegras*(int)vacasNegras);
-
-        System.out.println(vacasTotales+ "vacas " + kilosTotales+"kg");
-
-
-
+            System.out.println(vacasTotales + "vacas " + kilosTotales + "kg");
+        }
 
 
     }
