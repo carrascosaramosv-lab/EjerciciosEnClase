@@ -70,17 +70,17 @@ public class LigaFantasy {
                matao = "",
                 carnicero = "";
         if(goles>=3){
-            leyenda = "Eres una leyenda";
+            leyenda = " leyenda";
         }
         if(puntosTotales<5){
-            matao = "Eres un matao";
+            matao = " matao";
         }
         if (faltas>3){
-            carnicero = "Eres un carnicero";
+            carnicero = " carnicero";
         }
 
 
-        System.out.printf("%s ha hecho %d puntos en este partido.%s %s %s",nombre,puntosTotales,leyenda,matao,carnicero);
+        System.out.printf("%s ha hecho %d puntos en este partido.Eres %s %s %s",nombre,puntosTotales,leyenda,matao,carnicero);
     }
 
 

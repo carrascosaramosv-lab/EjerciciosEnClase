@@ -29,20 +29,23 @@ Salida de prueba
 
 
 package Tema2.EjerciciosControlDeFlujo.EjerciciosEnClase02;
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.util.Scanner;
 public class HoraDeDormir {
     public static void main(String[]args){
         final int MINUTOSHORA = 60;
+        final int HORASDIA = 24;
 
-
-                Scanner scanner = new Scanner(System.in);
+        System.out.println("A que hora te quieres despertar: ");
+        Scanner scanner = new Scanner(System.in);
 
         int horaAlarma = scanner.nextInt();
         int minutoAlarma = scanner.nextInt();
 
         // Restamos 8 horas
         int horaDormir = horaAlarma - 8;
-
+           /*
         // Truco matemático sin condicionales:
         // Si horaDormir es positivo (ej. 9 - 8 = 1), (1 + 24) % 24 = 1.
         // Si horaDormir es negativo (ej. 6 - 8 = -2), (-2 + 24) % 24 = 22.
@@ -60,6 +63,12 @@ public class HoraDeDormir {
         System.out.println(horaStr + ":" + minutoStr);
 
         scanner.close();
+
+        */
+
+            int minTotales = (MINUTOSHORA-minutoAlarma)%MINUTOSHORA;
+            horaDormir = (horaDormir + HORASDIA) % HORASDIA;
+        System.out.printf("%02d:%02d",horaDormir,minTotales);
 
 
 

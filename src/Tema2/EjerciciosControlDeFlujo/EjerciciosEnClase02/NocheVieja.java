@@ -6,7 +6,8 @@ Ramón se pasa el día de Nochevieja contando los minutos que faltan para que de
 
 Entrada
 
-La entrada consiste en una hora formada por las horas y los minutos separados por un espacio, y utilizando siempre dos dígitos. Se utiliza una representación en formato 24 horas (es decir, desde 00 00 a 23 59).
+La entrada consiste en una hora formada por las horas y los minutos separados por un espacio, y utilizando
+siempre dos dígitos. Se utiliza una representación en formato 24 horas (es decir, desde 00 00 a 23 59).
 
 Salida
 
@@ -40,11 +41,13 @@ public class NocheVieja {
                 min = sc.nextInt();
 
         int minTotales = (horas*MINUTOSHORAS)+min,
-            minTotalRestantes = MINUTOSDIA-minTotales;
+            minTotalRestantes = (MINUTOSDIA-minTotales +24)%24 ;
        /* int horasRestantes = (minTotalRestantes/60),
             minutosRestantes=(minTotalRestantes%60);
 
         System.out.printf("%d:%d",horasRestantes,minutosRestantes);*/
+
+
 
         System.out.printf("%d",minTotalRestantes);
 
