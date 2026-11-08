@@ -39,8 +39,50 @@ public class MalaMemoria {
 
         System.out.print("Introduce la fecha de Domingo dd mm aaaa: ");
         Scanner sc = new Scanner(System.in);
-        int dia = sc.nextInt()
+        int dia1 = sc.nextInt(),
+                mes1 = sc.nextInt(),
+                anio1 = sc.nextInt();
+
+        // 1. Calculamos los años extra a partir de los meses que superan el 12
+        int aniosmas = mes1 / 12;
+        int anioFinal = anio1 + aniosmas;
+
+        // El mes resultante antes de ajustar (del 1 al 12)
+        int mesFinal = mes1 % 12;
+        if (mesFinal == 0) {
+            mesFinal = 12;
+            anioFinal--; // Ajuste si cae en múltiplo exacto de 12
+        }
+
+        // 2. Averiguamos cuántos días tiene este mes
+        int diasDelMes = switch (mesFinal) {
+            case 4, 6, 9, 11 -> 30;
+            case 2 -> 28;
+            default -> 31;
+        };
+
+        // 3. Gestionamos el desbordamiento de los días (sin bucles)
+        int diasTotales = dia1;
+
+        if (diasTotales > diasDelMes) {
+            diasTotales -= diasDelMes;
+            mesFinal++;
+
+            // Si al sumar el mes pasa de 12, pasa al año siguiente
+            if (mesFinal > 12) {
+                mesFinal = 1;
+                anioFinal++;
+            }
+        }
+
+        System.out.printf("%d de %d del año %d", diasTotales, mesFinal, anioFinal);
+
+        sc.close();
+
+        }
+
+
 
 
     }
-}
+
