@@ -28,7 +28,7 @@ public class Nomina {
             if(horas>40){
                 int numExtra = horas-JORNADANORMAL;
                 double dineroExtra = numExtra*HORAEXTRA;
-                System.out.printf("el dinero de la primera semana es %.2f",dineroExtra+(PRECIOHORA*JORNADANORMAL));
+                System.out.printf("el dinero de la primera semana es %.2f€",dineroExtra+(PRECIOHORA*horas));
             }
 
 
