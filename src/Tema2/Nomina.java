@@ -1,10 +1,10 @@
 /*
-víctor quiere hacer un programa para saber si le han bien la nomina y para ello sabemos que victor cobra a 12,00€
+víctor quiere hacer un programa para saber cuanto va a cobrar esa semana y para ello sabemos que victor cobra a 12,00€
 la hora , su jornadas son de 8horas todo lo que sea mas de ese tiempo se considera hora extra y le pagan un 30%
 mas la hora, también hay que tener en cuenta que de 22:00 a 6:00 de la mañana se considera hora nocturna que pagan
 un 35% mas la hora, y si entre que sale de trabajar y vuelve a entrar no pasa 12horas le pagan una prima por no
 descansar lo suficiente.Victor está una semana de mañanas otra de tarde y otra de noches y trabaja de 5 dias a la semana.
-las horas extras solo se echan despues de tu 8 horas, nunca te harean entrar antes para hacer horas extras y que te vayas con tu turno.
+las horas extras solo se echan después de tus 8 horas, nunca te haran entrar antes para hacer horas extras y que te vayas con tu turno.
 
  */
 
