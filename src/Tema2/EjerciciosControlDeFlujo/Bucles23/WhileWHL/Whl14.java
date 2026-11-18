@@ -13,8 +13,18 @@ public class Whl14 {
 
         System.out.print("Introduce un número por teclado: ");
         //2.147.483.647
-        while(){
-
+        System.out.println("Introduce un número: ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int i =0;
+        while(num!=0){
+            num/=10;
+            i++;
+        }
+        if (i==1){
+            System.out.printf("%d cifra.",i);
+        } else {
+            System.out.printf("%d cifras.", i);
         }
 
 
