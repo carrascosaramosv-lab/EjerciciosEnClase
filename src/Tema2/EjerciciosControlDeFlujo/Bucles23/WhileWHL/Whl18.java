@@ -13,9 +13,12 @@ public class Whl18 {
         System.out.println("Introduce un número");
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
+        int x;
+        int i=0;
        while(num>0){
            if (num%2!=0){
-
+                i++;
+               x=num/i;
            }
        }
 
