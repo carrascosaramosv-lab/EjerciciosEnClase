@@ -57,7 +57,7 @@ public class FeriaGanado {
             System.out.printf("%d vacas   %d cerdos   %d pollos",vacas,cerdos,pollos);
 
 
-            scanner.close();
+            sc.close();
     }
 
 
